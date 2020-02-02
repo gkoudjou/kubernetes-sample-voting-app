@@ -1,8 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:
+  name: result-app-deployment
   labels:
+    name: result-app-deployment
+    app: demo-voting-app
 spec:
   replicas: 3
   selector:
