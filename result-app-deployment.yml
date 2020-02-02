@@ -6,8 +6,9 @@ metadata:
 spec:
   replicas: 3
   selector:
-    name: result-app-pod
-    app: demo-voting-app
+    matchLabels:
+      name: result-app-pod
+      app: demo-voting-app
   template:
     metadata:
       name: result-app-pod
